@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+:root {
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--Pale-blue);
+    background-image: url(pattern-background-mobile.svg);
+    background-repeat: repeat-x;
+}
+main {
+    text-align: center;
+    width: 90vw;
+    margin-top: 2rem;
+}
+img.hero-image {
+    display: block;
+    width: 100%;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+div.card-info {
+    background-color: white;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    padding-bottom: 1rem;
+    margin-bottom: .3rem;
+}
+h1 {
+    padding: 2rem;
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+h1, b {
+    color: var(--Dark-blue);
+}
+p {
+    line-height: 1.5;
+    padding: 0 1.5rem 2rem;
+}
+p, span {
+    color: var(--Desaturated-blue);
+}
+div.order-plan {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+div.order-plan-info {
+    display: grid;
+    grid-template-columns: 5rem 7rem 5rem;
+    align-items: center;
+    background-color: var(--Very-pale-blue);
+    border-radius: .5rem;
+}
+img.music-icon {
+    padding-top: 5px;
+}
+div.buttons {
+    display: flex;
+    justify-content: center;
+}
+div.btns {
+    display: grid;
+    grid-template-rows: 2rem 2rem;
+    align-items: center;
+    grid-template-columns: 17rem;
+    font-weight: 700;
+}
+div.payment-btn {
+    background-color: var(--Bright-blue);
+    padding: 1rem;
+    margin-bottom: 2rem;
+    border-radius: .5rem;
+    box-shadow: 6px 6px 16px var(--Bright-blue);
+}
+div.payment-btn:hover {
+    background-color: var(--Desaturated-blue);
+}
+a:hover {
+    text-decoration: none;
+}
+a.payment {
+    color: white;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+a.cancel {
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+footer {
+    font-size: 13px;  
+    text-align: center; 
+}
+footer a { 
+    color: hsl(228, 45%, 44%); 
+}
